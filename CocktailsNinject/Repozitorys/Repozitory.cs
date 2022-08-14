@@ -68,7 +68,7 @@ namespace CocktailsNinject.Repozitorys
         {
             string path = "CocktailsFile.txt";
 
-            using (StreamWriter writer = new StreamWriter(path, true))
+            using (StreamWriter writer = new StreamWriter(path, false))
             {
                 foreach(var cocktail in _cocktails)
                 {
